@@ -1,0 +1,108 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@500;800&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-size: 20px;
+}
+h1 span{
+    border: 4px solid  hsl(219, 85%, 26%);
+    border-radius: 10px;
+    background-color: hsl(219, 85%, 26%); ;
+    color: white;
+    padding: 5px;
+    height: 3px;
+}
+.user-photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.notification{
+    display: flex;
+    height: 50px;
+    background-color: hsl(210, 60%, 98%);
+    gap: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+   
+}
+.user-notification,h2{
+    padding-top: 10px;
+    font-size: 16px;
+    
+}
+.user-notification{
+    color:  hsl(219, 14%, 63%);
+
+}
+.user-notification span{
+    color:  hsl(224, 21%, 14%);
+}
+
+.container{
+    max-width: 700px; 
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.8);
+    margin: auto;
+    height: 100vh; 
+    align-items: center; 
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    justify-content: center;
+    
+}
+#club{
+    color: hsl(219, 85%, 26%);
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+textarea{
+    width: 80%;
+    height: 40px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    height: 100px; 
+    padding: 10px; 
+    margin-left: 90px;
+    border: 2px solid  hsl(219, 14%, 63%);
+    border-radius: 5px;
+    text-align: start;
+}
+  
+  @media (max-width: 380px) {
+    body {
+      font-size: 14px;
+    }
+    .container{
+        flex-direction: column;
+        
+    }
+    .notification,title,.user-notification{
+        flex-direction: column;
+        width: 100px;
+        height: 50px;
+    }
+  }
